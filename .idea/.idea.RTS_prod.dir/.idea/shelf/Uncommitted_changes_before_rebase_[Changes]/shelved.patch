@@ -1,0 +1,22 @@
+Index: RTS_prod.uproject
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>{\r\n\t\"FileVersion\": 3,\r\n\t\"EngineAssociation\": \"5.6\",\r\n\t\"Category\": \"\",\r\n\t\"Description\": \"\",\r\n\t\"Modules\": [\r\n\t\t{\r\n\t\t\t\"Name\": \"RTS_prod\",\r\n\t\t\t\"Type\": \"Runtime\",\r\n\t\t\t\"LoadingPhase\": \"Default\"\r\n\t\t}\r\n\t],\r\n\t\"Plugins\": [\r\n\t\t{\r\n\t\t\t\"Name\": \"ModelingToolsEditorMode\",\r\n\t\t\t\"Enabled\": true,\r\n\t\t\t\"TargetAllowList\": [\r\n\t\t\t\t\"Editor\"\r\n\t\t\t]\r\n\t\t}\r\n\t]\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/RTS_prod.uproject b/RTS_prod.uproject
+--- a/RTS_prod.uproject	(revision 6624f7cc26708d90e00a1fffd3eb70ce4f6e6b59)
++++ b/RTS_prod.uproject	(date 1748082340129)
+@@ -7,7 +7,10 @@
+ 		{
+ 			"Name": "RTS_prod",
+ 			"Type": "Runtime",
+-			"LoadingPhase": "Default"
++			"LoadingPhase": "Default",
++			"AdditionalDependencies": [
++				"Engine"
++			]
+ 		}
+ 	],
+ 	"Plugins": [
